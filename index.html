@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Evidencia 2</title>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container-nav">
+            <a class="link-nav" href="#">Inicio</a>
+            <a class="link-nav" href="#Pilas">Pilas y Colas</a>
+            <a class="link-nav" href="#Listas">Listas</a>
+            <a class="link-nav" href="#Arbol">Arbol</a>
+            <a class="link-nav" href="#excodigo">Codigo</a>
+
+        </nav>
+    </header>
+    <div class="title">
+        <h1 class="title_prin" id="Pilas"> <b class="arbol" >D</b> Evidencia 2 <b class="arbol" >D</b></h1>
+    </div>
+    <div class="info">
+        <h2 >Pilas y Colas</h2>
+        <ul>
+            <li>
+                <h3>Pilas</h3>
+                <p>Una Pila o Stack es un caso particular de la lista donde la inserción y eliminación de elementos se realizan solo por un extremo que se denomina cima o tope (top). 
+                    Funciona exactamente como su nombre lo indica, y con numerosas analogías en la vida real: una pila de libros, una pila de monedas, pila de platos, etc.</p>
+                <p>Este comportamiento está basado en el principio "último en entrar, primero en salir", también conocido como LIFO, por su nombre en inglés "last-in, first-out", 
+                    que dicta que el primer elemento que fue añadido a la pila será el último en ser removido de la misma.</p>
+            </li>
+            <li>
+                <h3>Colas</h3>
+                <p>Una Cola o Queue es un caso particular de la lista donde la inserción y eliminación de elementos se realizan por los extremos 
+                    de la lista; las eliminaciones se realizan al principio de la lista, o el frente (front) de la misma, y las inserciones se 
+                    realizan en el otro extremo, el final (rear). Algunas analogías en la vida real: cola de personas en el banco, cola de vehículos
+                    en el semáforo, etc.</p>
+                <p id="Listas">Este comportamiento está basado en el principio "primero en entrar, primero en salir", también conocido como FIFO, 
+                    por su nombre en inglés "first-in, first-out", que dicta que el primer elemento que fue añadido a la cola será el primero en 
+                    ser removido.</p>
+                    
+            </li>
+        </ul><br >
+        <h2 >Listas</h2>
+        <ul>
+            <li>
+                <h3>Lista enlazada simple</h3>
+                <p>La lista enlazada básica es la lista enlazada simple la cual tieneun enlace por nodo. Este enlace apunta al siguiente nodo en
+                    la lista, o al valor NULL o a la lista vacía, si es el último nodo.</p>
+            </li>
+            <li>
+                <h3>Lista doblemente enlazada</h3>
+                <p>Un tipo de lista enlazada más sofisticado es la lista doblemente enlazada o lista enlazadas de dos vías. </p>
+                <p>Cada nodo tiene dos enlaces: uno apunta al nodo anterior, o apunta al valor NULL si es el primer nodo; y otro que apunta
+                    al nodo siguiente, o apunta al valor NULL si es el último nodo.</p>
+            </li>
+            <li>
+                <h3>Lista enlazada circular</h3>
+                <p>En una lista enlazada circular, el primer y el último nodo están unidos juntos.Esto se puede hacer tanto para listas enlazadas 
+                    simples como para las doblemente enlazadas. Para recorrer una lista enlazada circular podemos empezar por cualquier nodo y
+                    seguir la lista en cualquier dirección hasta que se regrese hasta el nodo original. </p>
+                    <p id="Arbol">Desde otro punto de vista, las listas enlazadas circulares pueden ser vistas como listas sin comienzo ni fin. Este tipo de 
+                        listas es el más usado para dirigir buffers para “ingerir” datos, y para visitar todos los nodos de una lista a partir de 
+                        uno dado.</p>
+            </li>
+        </ul><br>
+        <h2 >Arbol</h2>
+        <ul>
+            <p>Los <b>árboles</b> son una estructura de datos muy común, que se
+                define de forma recursiva como una colección de nodos, empezando
+                por un nodo raíz, donde cada nodo es una estructura de datos que
+                contiene un valor, y opcionalmente una lista de referencias a otros
+                nodos (sus hijos), con la limitación de que ninguna referencia esté
+                duplicada, y que ninguno apunte al nodo raíz.</p>
+            <h3>Diferencias entre árboles y grafos</h3>
+            <p>Conceptualmente, podríamos decir que los árboles se enfocan en
+                representar “jerarquías”, mientras que los grafos son una estructura
+                más genérica usada para representar “redes”.</p>
+            <h3>Terminología</h3>
+            <li>
+                <h4>Nodo</h4>
+                <p>El “nodo” es la estructura básica que usamos para construir un “árbol”.
+                    Todos los elementos de un árbol son nodos. A su vez, cada nodo es un
+                    sub-árbol. Los nodos se caracterizan por tener un valor, y referencias a
+                    otros nodos.</p>
+            </li>
+            <li>
+                <h4>Padres / Hijos</h4>
+                <p>Los “hijos” de un nodo son los nodos a los cuáles éste hace referencia.</p>
+            </li>        
+            <li>
+                <h4>Nodo raíz</h4>
+                <p>Todo árbol tiene un nodo inicial o nodo raíz, el cual va a ser el único nodo que no
+                    tenga un “padre”.   </p>
+            </li>
+            <li>
+                <h4>Nodo hoja</h4>
+                <p>Los nodos hoja son aquellos que no tienen hijos (las hojas del árbol).</p>
+            </li>
+            <li>
+                <h4>Nivel</h4>
+                <p>En un árbol, cuando hablamos de “nivel” nos referimos a la distancia, o el número de
+                    saltos que debemos dar hasta llegar al nodo raíz. Podemos verlo también como el
+                    “nivel de anidación”.</p>
+            </li>
+            <h3>Tipos de arbol</h3>
+            <li>
+                <h4>Árbol completo</h4>
+                <p>Un árbol completo es aquel en el que todos los nodos tienen o ningún
+                    hijo o el número máximo de hijos.</p>
+            </li>
+            <li>
+                <h4>Árbol degenerado</h4>
+                <p>Cuando un árbol contiene 1 sólo hijo por nodo. Los árboles degenerados tienen la
+                    profundidad máxima posible dado un número de elementos. Este tipo de árboles se
+                    comportan como listas.</p>
+            </li>
+            <li>
+                <h4>Árbol balanceado</h4>
+                <p id="excodigo">Cuando un árbol contiene 1 sólo hijo por nodo. Los árboles degenerados tienen la
+                    profundidad máxima posible dado un número de elementos. Este tipo de árboles se
+                    comportan como listas.</p>
+            </li>
+        </ul> <br>
+        <h2>Explicacion del codigo</h2>
+        <ul>
+            <p>Para la realización de este examen de la unidad 2, se solicita la creación de 2 métodos. Uno seria para eliminar uno de los nodos del árbol por solicitando el valor a eliminar y recorriendo los nodos conforme se elimine. El otro seria el de buscar un valor el cual va a recorrer el árbol en busca del valor. El funcionamiento del árbol es que si el numero es mayor se va para la derecha y si es menor se va para izquierda.
+            </p>
+            <p>Otor de los requisitos, de manera opcional, es que tenga un interfaz visual que nos permita ver el como se va creado el árbol en la página.
+            </p>
+            <p>En primer lugar, se crea la clase nodo y la clase árbol, una nos ayudará para la creación de los nodos y la otra creará la jerarquía e ira posicionando los nodos.</p>
+            <p>Se crean los metodos los cuales se llamana:</p>
+            <li>
+                <h3>add</h3>
+                <p>El siguiente método es el “add” que nos ayudara a agregar los nodos el árbol, tiene como parámetro el valor que vamos agregar.</p>
+            </li>
+            <li>
+                <h3>dibujar y dibujarNivel</h3>
+                <p>Con la primera creamos una variable le asignamos el contendor donde va estar ubicado el árbol, despueste borra su contenido y manda a llamar al siguiente método asignándole los parámetros.</p>
+                <p>El siguiente método crea los niveles con su etiqueta para indicar el nivel</p>
+            </li>
+            <li>
+                <h3>RemoverData</h3>
+                <p>sirve para eliminar un nodo por medio de su valor empieza recorriendo el árbol por medio de un while y después a va a comprobar varios casos.</p>
+            </li>
+            <li>
+                <h3>search</h3>
+                <p>sirve para buscar un nodo por medio de su valor empieza recorriendo el árbol por medio de un while y después a va a comprobar varios casos. </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="codigo">
+        <h1 >Arbol</h1>
+
+        <input type="text" class="text-input" id="inputValor" placeholder="Escribe el numero a añadir/eliminar">
+
+
+        <div class="button-container">
+            <button class="button" id="btnagregar">Agregar</button>
+            <button class="button" id="btnbuscar">Buscar</button>
+            <button class="button" id="btneliminar">Eliminar</button>
+
+        </div>
+        <div id="arbolGrafico">
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
